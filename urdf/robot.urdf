@@ -1,0 +1,291 @@
+<robot name="walker">
+    <link name="base_link">
+        <inertial>
+            <origin xyz="0 0 0" rpy="0 0 0" />
+            <mass value="0.1" />
+            <inertia ixx="0" ixy="0" ixz="0" iyy="0" iyz="0" izz="0" />
+        </inertial>
+
+        <visual>
+            <origin xyz="0 0 0" rpy="0 0 0" />
+            <geometry>
+                <mesh filename="package://body.stl" />
+            </geometry>
+            <material name="body_material">
+                <color rgba="0.5 0.5 0.5 1.0" />
+            </material>
+        </visual>
+
+        <collision>
+            <origin xyz="0 0 0" rpy="0 0 0" />
+            <geometry>
+                <mesh filename="package://body.stl" />
+            </geometry>
+            <material name="body_material">
+                <color rgba="0.5 0.5 0.5 1.0" />
+            </material>
+        </collision>
+    </link>
+
+
+
+    <link name="body">
+        <visual>
+            <origin xyz="3.59153e-05 0.002 0.018562" rpy="0 -3.61199e-16 1.9294e-16" />
+            <geometry>
+                <mesh filename="package://right_forearm.stl" />
+            </geometry>
+            <material name="right_forearm_material">
+                <color rgba="0.5 0.5 0.5 1.0" />
+            </material>
+        </visual>
+        <collision>
+            <origin xyz="3.59153e-05 0.002 0.018562" rpy="0 -3.61199e-16 1.9294e-16" />
+            <geometry>
+                <mesh filename="package://right_forearm.stl" />
+            </geometry>
+            <material name="right_forearm_material">
+                <color rgba="0.5 0.5 0.5 1.0" />
+            </material>
+        </collision>
+        <visual>
+            <origin xyz="-3.591e-05 0 0.018562" rpy="0 -3.09762e-18 1.9294e-16" />
+            <geometry>
+                <mesh filename="package://left_knee.stl" />
+            </geometry>
+            <material name="left_knee_material">
+                <color rgba="0.5 0.5 0.5 1.0" />
+            </material>
+        </visual>
+        <collision>
+            <origin xyz="-3.591e-05 0 0.018562" rpy="0 -3.09762e-18 1.9294e-16" />
+            <geometry>
+                <mesh filename="package://left_knee.stl" />
+            </geometry>
+            <material name="left_knee_material">
+                <color rgba="0.5 0.5 0.5 1.0" />
+            </material>
+        </collision>
+        <visual>
+            <origin xyz="-3.59184e-05 -0.002 0.018562" rpy="0 1.16269e-16 1.9294e-16" />
+            <geometry>
+                <mesh filename="package://left_calf.stl" />
+            </geometry>
+            <material name="left_calf_material">
+                <color rgba="0.439216 0.47451 0.501961 1.0" />
+            </material>
+        </visual>
+        <collision>
+            <origin xyz="-3.59184e-05 -0.002 0.018562" rpy="0 1.16269e-16 1.9294e-16" />
+            <geometry>
+                <mesh filename="package://left_calf.stl" />
+            </geometry>
+            <material name="left_calf_material">
+                <color rgba="0.5 0.5 0.5 1.0" />
+            </material>
+        </collision>
+        <visual>
+            <origin xyz="3.59069e-05 0 0.018562" rpy="0 -2.41832e-16 1.9294e-16" />
+            <geometry>
+                <mesh filename="package://right_elbow.stl" />
+            </geometry>
+            <material name="right_elbow_material">
+                <color rgba="0.5 0.5 0.5 1.0" />
+            </material>
+        </visual>
+        <collision>
+            <origin xyz="3.59069e-05 0 0.018562" rpy="0 -2.41832e-16 1.9294e-16" />
+            <geometry>
+                <mesh filename="package://right_elbow.stl" />
+            </geometry>
+            <material name="right_elbow_material">
+                <color rgba="0.5 0.5 0.5 1.0" />
+            </material>
+        </collision>
+        <visual>
+            <origin xyz="3.59069e-05 -6.93889e-18 0.018312" rpy="0 -2.41832e-16 1.9294e-16" />
+            <geometry>
+                <mesh filename="package://right_upper_arm.stl" />
+            </geometry>
+            <material name="right_upper_arm_material">
+                <color rgba="0.5 0.5 0.5 1.0" />
+            </material>
+        </visual>
+        <collision>
+            <origin xyz="3.59069e-05 -6.93889e-18 0.018312" rpy="0 -2.41832e-16 1.9294e-16" />
+            <geometry>
+                <mesh filename="package://right_upper_arm.stl" />
+            </geometry>
+            <material name="right_upper_arm_material">
+                <color rgba="0.5 0.5 0.5 1.0" />
+            </material>
+        </collision>
+        <visual>
+            <origin xyz="-3.591e-05 0 0.018312" rpy="0 -3.09762e-18 1.9294e-16" />
+            <geometry>
+                <mesh filename="package://left_thigh.stl" />
+            </geometry>
+            <material name="left_thigh_material">
+                <color rgba="0.5 0.5 0.5 1.0" />
+            </material>
+        </visual>
+        <collision>
+            <origin xyz="-3.591e-05 0 0.018312" rpy="0 -3.09762e-18 1.9294e-16" />
+            <geometry>
+                <mesh filename="package://left_thigh.stl" />
+            </geometry>
+            <material name="left_thigh_material">
+                <color rgba="0.5 0.5 0.5 1.0" />
+            </material>
+        </collision>
+        <visual>
+            <origin xyz="6.86646e-08 8.01086e-08 3.46945e-18" rpy="0 -1.22465e-16 0" />
+            <geometry>
+                <mesh filename="package://battery.stl" />
+            </geometry>
+            <material name="battery_material">
+                <color rgba="0.5 0.5 0.5 1.0" />
+            </material>
+        </visual>
+        <collision>
+            <origin xyz="6.86646e-08 8.01086e-08 3.46945e-18" rpy="0 -1.22465e-16 0" />
+            <geometry>
+                <mesh filename="package://battery.stl" />
+            </geometry>
+            <material name="battery_material">
+                <color rgba="0.5 0.5 0.5 1.0" />
+            </material>
+        </collision>
+        <visual>
+            <origin xyz="3.59069e-05 1.38778e-17 0.018312" rpy="0 -2.41832e-16 -4.37869e-16" />
+            <geometry>
+                <mesh filename="package://right_thigh.stl" />
+            </geometry>
+            <material name="right_thigh_material">
+                <color rgba="0.5 0.5 0.5 1.0" />
+            </material>
+        </visual>
+        <collision>
+            <origin xyz="3.59069e-05 1.38778e-17 0.018312" rpy="0 -2.41832e-16 -4.37869e-16" />
+            <geometry>
+                <mesh filename="package://right_thigh.stl" />
+            </geometry>
+            <material name="right_thigh_material">
+                <color rgba="0.5 0.5 0.5 1.0" />
+            </material>
+        </collision>
+        <visual>
+            <origin xyz="-3.591e-05 2.77556e-17 0.018562" rpy="2.27609e-33 -1.54881e-17 -9.27728e-16" />
+            <geometry>
+                <mesh filename="package://left_elbow.stl" />
+            </geometry>
+            <material name="left_elbow_material">
+                <color rgba="0.5 0.5 0.5 1.0" />
+            </material>
+        </visual>
+        <collision>
+            <origin xyz="-3.591e-05 2.77556e-17 0.018562" rpy="2.27609e-33 -1.54881e-17 -9.27728e-16" />
+            <geometry>
+                <mesh filename="package://left_elbow.stl" />
+            </geometry>
+            <material name="left_elbow_material">
+                <color rgba="0.5 0.5 0.5 1.0" />
+            </material>
+        </collision>
+        <visual>
+            <origin xyz="3.59153e-05 -0.002 0.018562" rpy="0 -3.61199e-16 -4.37869e-16" />
+            <geometry>
+                <mesh filename="package://right_calf.stl" />
+            </geometry>
+            <material name="right_calf_material">
+                <color rgba="0.5 0.5 0.5 1.0" />
+            </material>
+        </visual>
+        <collision>
+            <origin xyz="3.59153e-05 -0.002 0.018562" rpy="0 -3.61199e-16 -4.37869e-16" />
+            <geometry>
+                <mesh filename="package://right_calf.stl" />
+            </geometry>
+            <material name="right_calf_material">
+                <color rgba="0.5 0.5 0.5 1.0" />
+            </material>
+        </collision>
+        <visual>
+            <origin xyz="-3.59184e-05 0.002 0.018562" rpy="0 1.16269e-16 -4.37869e-16" />
+            <geometry>
+                <mesh filename="package://left_forearm.stl" />
+            </geometry>
+            <material name="left_forearm_material">
+                <color rgba="0.5 0.5 0.5 1.0" />
+            </material>
+        </visual>
+        <collision>
+            <origin xyz="-3.59184e-05 0.002 0.018562" rpy="0 1.16269e-16 -4.37869e-16" />
+            <geometry>
+                <mesh filename="package://left_forearm.stl" />
+            </geometry>
+            <material name="left_forearm_material">
+                <color rgba="0.5 0.5 0.5 1.0" />
+            </material>
+        </collision>
+        <visual>
+            <origin xyz="3.59069e-05 1.38778e-17 0.018562" rpy="0 -2.41832e-16 -4.37869e-16" />
+            <geometry>
+                <mesh filename="package://right_knee.stl" />
+            </geometry>
+            <material name="right_knee_material">
+                <color rgba="0.5 0.5 0.5 1.0" />
+            </material>
+        </visual>
+        <collision>
+            <origin xyz="3.59069e-05 1.38778e-17 0.018562" rpy="0 -2.41832e-16 -4.37869e-16" />
+            <geometry>
+                <mesh filename="package://right_knee.stl" />
+            </geometry>
+            <material name="right_knee_material">
+                <color rgba="0.5 0.5 0.5 1.0" />
+            </material>
+        </collision>
+        <visual>
+            <origin xyz="-3.591e-05 -1.38778e-17 0.018312" rpy="-5.47382e-48 -3.09762e-18 -4.37869e-16" />
+            <geometry>
+                <mesh filename="package://left_upper_arm.stl" />
+            </geometry>
+            <material name="left_upper_arm_material">
+                <color rgba="0.5 0.5 0.5 1.0" />
+            </material>
+        </visual>
+        <collision>
+            <origin xyz="-3.591e-05 -1.38778e-17 0.018312" rpy="-5.47382e-48 -3.09762e-18 -4.37869e-16" />
+            <geometry>
+                <mesh filename="package://left_upper_arm.stl" />
+            </geometry>
+            <material name="left_upper_arm_material">
+                <color rgba="0.5 0.5 0.5 1.0" />
+            </material>
+        </collision>
+        <visual>
+            <origin xyz="0 0 0" rpy="0 -0 0" />
+            <geometry>
+                <mesh filename="package://body.stl" />
+            </geometry>
+            <material name="body_material">
+                <color rgba="0.5 0.5 0.5 1.0" />
+            </material>
+        </visual>
+        <collision>
+            <origin xyz="0 0 0" rpy="0 -0 0" />
+            <geometry>
+                <mesh filename="package://body.stl" />
+            </geometry>
+            <material name="body_material">
+                <color rgba="0.5 0.5 0.5 1.0" />
+            </material>
+        </collision>
+        <inertial>
+            <origin xyz="0 0 0" rpy="0 0 0" />
+            <mass value="0" />
+            <inertia ixx="0" ixy="0" ixz="0" iyy="0" iyz="0" izz="0" />
+        </inertial>
+    </link>
+</robot>
