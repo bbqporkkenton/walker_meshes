@@ -1,0 +1,83 @@
+<robot name="onshape">
+<link name="body">
+<visual>
+<origin xyz="0 0 0" rpy="0 -0 0" />
+<geometry>
+<mesh filename="package://body.stl"/>
+</geometry>
+<material name="body_material">
+<color rgba="0.34902 0.376471 0.4 1.0"/>
+</material>
+</visual>
+<collision>
+<origin xyz="0 0 0" rpy="0 -0 0" />
+<geometry>
+<mesh filename="package://body.stl"/>
+</geometry>
+<material name="body_material">
+<color rgba="0.34902 0.376471 0.4 1.0"/>
+</material>
+</collision>
+<visual>
+<origin xyz="0 0 0" rpy="0 -0 0" />
+<geometry>
+<mesh filename="package://right_upper_arm.stl"/>
+</geometry>
+<material name="right_upper_arm_material">
+<color rgba="0.439216 0.47451 0.501961 1.0"/>
+</material>
+</visual>
+<collision>
+<origin xyz="0 0 0" rpy="0 -0 0" />
+<geometry>
+<mesh filename="package://right_upper_arm.stl"/>
+</geometry>
+<material name="right_upper_arm_material">
+<color rgba="0.439216 0.47451 0.501961 1.0"/>
+</material>
+</collision>
+<visual>
+<origin xyz="0 0 0" rpy="0 -0 0" />
+<geometry>
+<mesh filename="package://left_upper_arm.stl"/>
+</geometry>
+<material name="left_upper_arm_material">
+<color rgba="0.439216 0.47451 0.501961 1.0"/>
+</material>
+</visual>
+<collision>
+<origin xyz="0 0 0" rpy="0 -0 0" />
+<geometry>
+<mesh filename="package://left_upper_arm.stl"/>
+</geometry>
+<material name="left_upper_arm_material">
+<color rgba="0.439216 0.47451 0.501961 1.0"/>
+</material>
+</collision>
+<visual>
+<origin xyz="0 0 0" rpy="0 -0 0" />
+<geometry>
+<mesh filename="package://battery.stl"/>
+</geometry>
+<material name="battery_material">
+<color rgba="0.262745 0.282353 0.301961 1.0"/>
+</material>
+</visual>
+<collision>
+<origin xyz="0 0 0" rpy="0 -0 0" />
+<geometry>
+<mesh filename="package://battery.stl"/>
+</geometry>
+<material name="battery_material">
+<color rgba="0.262745 0.282353 0.301961 1.0"/>
+</material>
+</collision>
+<inertial>
+<origin xyz="0 0 0" rpy="0 0 0"/>
+<mass value="0" />
+<inertia ixx="0" ixy="0"  ixz="0" iyy="0" iyz="0" izz="0" />
+</inertial>
+</link>
+
+
+</robot>
